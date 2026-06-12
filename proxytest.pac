@@ -11,7 +11,7 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "gitlab.com") ||
         dnsDomainIs(host, "augloop.office.com") ||
         dnsDomainIs(host, "api.openai.com") ||
-        dnsDomainIs(host, "app.warp.dev") ||"
+        dnsDomainIs(host, "app.warp.dev") ||
         dnsDomainIs(host, "translate.googleapis.com") ||
         dnsDomainIs(host, "substrate.office.com") ||
         dnsDomainIs(host, "sydney.bing.com") ||
@@ -47,7 +47,7 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.individual.githubcopilot.com") ||
         shExpMatch(host, "*.business.githubcopilot.com") ||
         shExpMatch(host, "*.enterprise.githubcopilot.com") ||
-   	    shExpMatch(host, "*.kiro.dev") ||
+        shExpMatch(host, "*.kiro.dev") ||
         shExpMatch(host, "*.byteoversea.com") ||
         shExpMatch(host, "*.byteintlapi.com")
     ) {

@@ -31,8 +31,10 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "cloudcode-pa.googleapis.com") ||
         dnsDomainIs(host, "generativelanguage.googleapis.com") ||
         dnsDomainIs(host, "gemini.google.com") ||
+        dnsDomainIs(host, "robinfrontend-pa.googleapis.com") ||
         dnsDomainIs(host, "www.genspark.ai") ||
         dnsDomainIs(host, "www.notion.so") ||
+        dnsDomainIs(host, "http-inputs-notion.splunkcloud.com") ||
         dnsDomainIs(host, "api.memo.satto.me") ||
         dnsDomainIs(host, "api.gen.qodo.ai") ||
         dnsDomainIs(host, "api2.cursor.sh") ||
@@ -47,9 +49,9 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.individual.githubcopilot.com") ||
         shExpMatch(host, "*.business.githubcopilot.com") ||
         shExpMatch(host, "*.enterprise.githubcopilot.com") ||
-        shExpMatch(host, "*.kiro.dev") ||
         shExpMatch(host, "*.byteoversea.com") ||
-        shExpMatch(host, "*.byteintlapi.com")
+        shExpMatch(host, "*.byteintlapi.com") || 
+        shExpMatch(host, "senseicore-*.adobe.io")
     ) {
         return "PROXY 127.0.0.1:3636; DIRECT";
     }

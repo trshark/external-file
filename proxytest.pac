@@ -41,7 +41,6 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "www.genspark.ai") ||
         dnsDomainIs(host, "www.notion.so") ||
         dnsDomainIs(host, "notion.com") ||
-        dnsDomainIs(host, "www.notion.com") ||
         dnsDomainIs(host, "api.memo.satto.me") ||
         dnsDomainIs(host, "api.gen.qodo.ai") ||
         dnsDomainIs(host, "api2.cursor.sh") ||

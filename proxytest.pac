@@ -14,6 +14,7 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "app.warp.dev") ||
         dnsDomainIs(host, "translate.googleapis.com") ||
         dnsDomainIs(host, "substrate.office.com") ||
+        dnsDomainIs(host, "substrate.svc.cloud.microsoft") ||
         dnsDomainIs(host, "sydney.bing.com") ||
         dnsDomainIs(host, "chatapi.supermaven.com") ||
         dnsDomainIs(host, "stream.supermaven.com") ||
@@ -31,10 +32,16 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "cloudcode-pa.googleapis.com") ||
         dnsDomainIs(host, "generativelanguage.googleapis.com") ||
         dnsDomainIs(host, "gemini.google.com") ||
+        shExpMatch(url, "https://www.google.com/search?udm=50") ||
+        shExpMatch(url, "https://www.google.com/search?udm=50&*") ||
+        shExpMatch(url, "https://www.google.com/search?*&udm=50") ||
+        shExpMatch(url, "https://www.google.com/search?*&udm=50&*") ||
+        shExpMatch(url, "https://www.google.com/async/*") ||
         dnsDomainIs(host, "robinfrontend-pa.googleapis.com") ||
         dnsDomainIs(host, "www.genspark.ai") ||
         dnsDomainIs(host, "www.notion.so") ||
-        dnsDomainIs(host, "http-inputs-notion.splunkcloud.com") ||
+        dnsDomainIs(host, "notion.com") ||
+        dnsDomainIs(host, "www.notion.com") ||
         dnsDomainIs(host, "api.memo.satto.me") ||
         dnsDomainIs(host, "api.gen.qodo.ai") ||
         dnsDomainIs(host, "api2.cursor.sh") ||
